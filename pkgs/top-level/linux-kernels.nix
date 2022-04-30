@@ -279,6 +279,8 @@ in {
 
     apfs = callPackage ../os-specific/linux/apfs { };
 
+    ax88179_178a = callPackage ../os-specific/linux/ax88179_178a { };
+
     batman_adv = callPackage ../os-specific/linux/batman-adv {};
 
     bbswitch = callPackage ../os-specific/linux/bbswitch {};
@@ -338,6 +340,8 @@ in {
     broadcom_sta = callPackage ../os-specific/linux/broadcom-sta { };
 
     tbs = callPackage ../os-specific/linux/tbs { };
+
+    macbook12-spi-driver = callPackage ../os-specific/linux/macbook12-spi-driver { };
 
     mbp2018-bridge-drv = callPackage ../os-specific/linux/mbp-modules/mbp2018-bridge-drv { };
 
