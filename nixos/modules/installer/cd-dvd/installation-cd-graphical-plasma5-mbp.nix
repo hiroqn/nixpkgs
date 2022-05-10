@@ -13,7 +13,7 @@
     config.boot.kernelPackages.ax88179_178a
   ];
   boot.kernelModules = [
-    "bce"
+    "apple-bce"
     "apple-ibridge"
     "apple-ib-tb"
     "apple-ib-als"
@@ -21,4 +21,5 @@
     "ax88179_178a"
   ];
   nixpkgs.config.allowUnfree = true;
+    services.logrotate.checkConfig = false;
 }

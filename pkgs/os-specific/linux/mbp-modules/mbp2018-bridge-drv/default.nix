@@ -5,10 +5,10 @@ stdenv.mkDerivation rec {
   version = "2020-01-31";
 
   src = fetchFromGitHub {
-    owner = "MCMrARM";
-    repo = "mbp2018-bridge-drv";
-    rev = "b43fcc069da73e051072fde24af4014c9c487286";
-    sha256 = "sha256-o6yGiR+Y5SnX1johdi7fQWP5ts7HdDMqeju75UOhgik=";
+    owner = "t2linux";
+    repo = "apple-bce-drv";
+    rev = "f93c6566f98b3c95677de8010f7445fa19f75091";
+    sha256 = "sha256-5jvfDSa7tHp6z+E+RKIalNiLpsku1RNnKoJV2Ps8288=";
   };
 
   nativeBuildInputs = kernel.moduleBuildDependencies;

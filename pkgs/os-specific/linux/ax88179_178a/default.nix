@@ -1,4 +1,4 @@
-{ stdenv, fetchzip, kernel }:
+{ stdenv, lib, fetchzip, kernel }:
 
 stdenv.mkDerivation rec {
   name = "ax88179_178a-${version}-${kernel.version}";
@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     description = "Kernel module driver for AX88179";
     homepage = "https://www.asix.com.tw/en/product/USBEthernet/Super-Speed_USB_Ethernet/AX88179";
     #license = stdenv.lib.licenses.unfreeRedistributable; TODO confirm
-    platforms = stdenv.lib.platforms.linux;
+    platforms = lib.platforms.linux;
   };
 }

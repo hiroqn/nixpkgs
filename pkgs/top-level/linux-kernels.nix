@@ -341,7 +341,7 @@ in {
 
     tbs = callPackage ../os-specific/linux/tbs { };
 
-    macbook12-spi-driver = callPackage ../os-specific/linux/macbook12-spi-driver { };
+    macbook12-spi-driver = callPackage ../os-specific/linux/mbp-modules/macbook12-spi-driver { };
 
     mbp2018-bridge-drv = callPackage ../os-specific/linux/mbp-modules/mbp2018-bridge-drv { };
 
